@@ -1,0 +1,13 @@
+.custom-bg{
+    /* background: linear-gradient(180deg, #DBFF00 12.01%, #FF0000 57.51%, #FF9696 92.11%); */
+    content: '';
+    background: url('./assets/images/home-bg.png')no-repeat center center;
+    background-size: cover;
+}
+
+.custom-bg-2{
+    background: linear-gradient(177.75deg, #FF9696 6.05%, #FFFFFF 55.2%);
+}
+body{
+    scroll-behavior: smooth;
+}
