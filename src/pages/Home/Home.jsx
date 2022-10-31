@@ -6,6 +6,8 @@ import Card from '../../components/Card/Card'
 import { ROUTES } from '../../routes/RouterConfig'
 import kleLogo from './../../assets/images/kle.png'
 import { districtData } from '../../data/data'
+import kannadabalaga from './../../assets/images/balaga.jpg'
+import ssc from './../../assets/images/ssc.jpg'
 
 const Home = () => {
 
@@ -87,16 +89,18 @@ const Home = () => {
   return (
     <div className='Home overflow-hidden'>
       <div className="text-xl text-[red] min-h-screen  custom-bg">
-        <div className='p-10 w-screen top-0 left-0 h-[10vh] bg-transparent flex items-center justify-end'>
+        <div className='p-10 w-screen top-0 left-0 h-[10vh] bg-transparent flex items-center justify-between'>
+          <img src={ssc} alt="" className='w-[45px] sm:w-[55px] rounded' />
           <img src={kleLogo} alt="" className='w-[180px]' />
+          <img src={kannadabalaga} alt="" className='w-[45px] sm:w-[55px]' />
         </div>
         <div className='font-extrabold text-[white] sm:text-7xl text-xl min-h-[90vh] flex items-center justify-center flex-col gap-[15px]'>
           <div className='bg-clip-text bg-gradient-to-r from-[red] to-[yellow] text-transparent p-5'>
             ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ - ೨೦೨೨
           </div>
-          <div className="text-lg font-bold">
+          {/* <div className="text-lg font-bold">
             {infoArray[showInfo]}
-          </div>
+          </div> */}
           <a href='#content' className='bg-[red] text-xl mt-[15px] px-[24px] py-[8px] rounded-[16px] font-normal '>
             Explore
           </a>
