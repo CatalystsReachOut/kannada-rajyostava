@@ -33,11 +33,16 @@ const About = () => {
         {
           data.data.map((i, key) => (
             <div className='grid grid-cols-5  gap-[30px] my-[30px] '>
-              <div className="col-span-2 flex  items-center">
+              <div className="col-span-5 mt-3 sm:hidden block text-3xl font-bold">
+                {
+                  i.title
+                }
+              </div>
+              <div className="sm:col-span-2 col-span-5 flex  items-center">
                 <img src={i.img} alt="" className='mb-auto w-full  rounded-[8px] shadow' />
               </div>
-              <div className='col-span-3'>
-              <div className="col-span-5  text-3xl font-bold">
+              <div className='sm:col-span-3 col-span-5'>
+              <div className="sm:block hidden text-3xl font-bold">
                 {
                   i.title
                 }

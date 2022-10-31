@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='h-[50px] w-full bg-transparent p-6 mb-6'>
+    <div className=' w-full p-6 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100'>
         <div className='text-right'>
-            Designed and developed by &nbsp;&nbsp;&nbsp; <a href="https://catalystsreachout.com/" className='text-[red]'> Catalysts Reachout </a>
+            Designed and Developed by &nbsp;&nbsp;&nbsp; <a href="https://catalystsreachout.com/" className='text-[red]'> Catalysts Reachout </a>
         </div>
     </div>
   )
