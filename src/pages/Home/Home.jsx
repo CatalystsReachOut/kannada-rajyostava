@@ -90,25 +90,25 @@ const Home = () => {
         <div className='p-10 w-screen top-0 left-0 h-[10vh] bg-transparent flex items-center justify-end'>
           <img src={kleLogo} alt="" className='w-[180px]' />
         </div>
-        <div className='font-extrabold text-[white] sm:text-7xl text-xl min-h-[90vh] flex items-center justify-center flex-col gap-5'>
+        <div className='font-extrabold text-[white] sm:text-7xl text-xl min-h-[90vh] flex items-center justify-center flex-col gap-[15px]'>
           <div className='bg-clip-text bg-gradient-to-r from-[red] to-[yellow] text-transparent p-5'>
             ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ - ೨೦೨೨
           </div>
           <div className="text-lg font-bold">
             {infoArray[showInfo]}
           </div>
-          <a href='#content' className='bg-[red] text-2xl px-3 py-2 rounded-full font-normal '>
+          <a href='#content' className='bg-[red] text-xl mt-[15px] px-[24px] py-[8px] rounded-[16px] font-normal '>
             Explore
           </a>
         </div>
       </div>
-      <div className="custom-bg-2 h-screen">
+      {/* <div className="custom-bg-2 h-screen">
         Content
-      </div>
-      <div className="container m-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5" id='content'>
+      </div> */}
+      <div className="container py-[120px] m-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5" id='content'>
         {
           districtData.map((i,key)=>(
-            <div className="col-span-1 flex items-center justify-center">
+            <div className="col-span-1 my-[30px] flex items-center justify-center">
               <Card data={i}/>
             </div>
           ))

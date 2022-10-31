@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from '../components/Footer/Footer';
 import ScrollToTop from '../helpers/ScrollToTop';
 import About from '../pages/About/About';
 import Home from '../pages/Home/Home';
@@ -12,6 +13,7 @@ const Router = () => {
           <>
             <ScrollToTop/>
             <Element/>
+            <Footer/>
           </>
         );
       }

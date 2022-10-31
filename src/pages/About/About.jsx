@@ -27,23 +27,25 @@ const About = () => {
           </div>
         </div>
 
+
+        <h2 className='text-4xl text-center mb-[60px] bg-clip-text bg-gradient-to-r from-[red] to-[yellow] text-transparent p-4 font-bold'>{data?.name}</h2>
         {/* content */}
         {
           data.data.map((i, key) => (
-            <div className='grid grid-cols-5 sm:gap-5 gap-2 mb-6 mt-6'>
-              <div className="col-span-5 text-center text-4xl font-bold">
+            <div className='grid grid-cols-5  gap-[30px] my-[30px] '>
+              <div className="col-span-2 flex  items-center">
+                <img src={i.img} alt="" className='mb-auto w-full  rounded-[8px] shadow' />
+              </div>
+              <div className='col-span-3'>
+              <div className="col-span-5  text-3xl font-bold">
                 {
                   i.title
                 }
               </div>
-              <div className="col-span-2 flex items-center">
-                <img src={i.img} alt="" className='w-full aspect-square rounded-xl' />
-              </div>
-              <div className='col-span-3'>
-                <div className='mb-4'>
+                <div className='mt-[15px] text-sm'>
                   {i.k}
                 </div>
-                <div>
+                <div className='mt-[15px] text-sm'>
                   {i.e}
                 </div>
               </div>

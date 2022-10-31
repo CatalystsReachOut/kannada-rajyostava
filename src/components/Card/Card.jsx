@@ -23,7 +23,7 @@ const Card = ({data}) => {
                         />
                     <div className="cardInfo">
                         <h3 className="cardTitle ">{data?.name}</h3>
-                        <p className=''>Mudrana Nagari</p>
+                        <p className=''>Rajyostava - 2022</p>
                     </div>
                 </div>
 
